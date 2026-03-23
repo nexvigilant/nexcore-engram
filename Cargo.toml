@@ -1,0 +1,20 @@
+
+[package]
+name = "nexcore-engram"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.85"
+description = "Unified knowledge daemon — persistent memory with semantic search and temporal decay"
+license = "LicenseRef-Proprietary"
+
+[dependencies]
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = { version = "1.0.120" }
+nexcore-chrono = { workspace = true }
+nexcore-lex-primitiva = { version = "0.1.0", path = "../nexcore-lex-primitiva", registry = "nexcore" }
+
+[dev-dependencies]
+tempfile = { version = "3.10.1" }
+
+[lints]
+workspace = true
